@@ -1,0 +1,8 @@
+* {
+  box-sizing: border-box;
+}
+
+.birthdayWrapper {
+  height: 295px;
+  background-color: #7554BD;
+}

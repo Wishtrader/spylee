@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+.feedformwrapper {
+  position: relative;
+  width: 100%;
+  height: 310px;
+  margin: 0px auto;
+  background-color: #fff;
+}
+
+input.tab {
+  display: none;
+}
+
+input.tab:checked + label{
+  background-color: #ffffff;
+  color: #000000;
+}
+
+input[id="tab-1"]:checked ~ .tabForm .feedtextarea1,
+input[id="tab-2"]:checked ~ .tabForm .feedtextarea2,
+input[id="tab-3"]:checked ~ .tabForm .feedtextarea3 {
+  display: block;
+}
+
+.tabIcon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 0px auto;
+}
+
+label.labeltab {
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  background-color: #F2F2F2;
+  color: #777777;
+  border: 1px solid #D5D5D5;
+  width: 130px;
+  min-height: 40px;
+  font-size: 14px;
+  padding: 5px;
+}
+
+
+.tabForm {
+  position: relative;
+  width: 100%;
+  display: block;
+  height: 170px;
+}
+
+.feedtextarea1,
+.feedtextarea2,
+.feedtextarea3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 170px;
+  display: none;
+  border: none;
+  border-bottom: 1px solid #D5D5D5;
+  padding-left: 80px;
+  padding-top: 30px;
+  font-size: 18px;
+}
+
+.feedtextarea1::placeholder {font-size: 14px;}
+.feedtextarea2::placeholder {font-size: 14px;}
+.feedtextarea3::placeholder {font-size: 14px;}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #fff;
+  height: 91px;
+  width: 100%;
+  align-items: center;
+  padding-right: 15px;
+}
+
+.btn {
+  width: 120px;
+  height: 45px;
+  border-radius: 3px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.preview {
+  background-color: transparent;
+  border: 1px solid #CECBCB;
+  color: #B7B5B5;
+  margin-right: 20px;
+}
+
+.status {
+  background-color: #3EE08F;
+  border: 1px solid #3EE08F;
+  color: #ffffff;
+}
+
+.avatar {
+  position: absolute;
+  top: 63px;
+  left: 15px;
+  z-index: 10;
+  width: 50px;
+}

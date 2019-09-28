@@ -1,0 +1,9 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+.weatherWrapper {
+  height: 295px;
+}
